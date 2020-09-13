@@ -9,7 +9,7 @@ typedef long long ll;
 
 using namespace std;
 
-//Utilização de DP e analisando as multiplicações
+//Pega os maiores e é isso
 ll maximumProduct(vector<ll> numbers, int n){
     int length = numbers.size() - 1;
     sort(numbers.begin(), numbers.end());
