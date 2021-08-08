@@ -19,7 +19,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/davimedio01/competitive-programming">
-    <img src="/Resources/Images/logo2.png" alt="Logo" >
+    <img src="/Resources/Images/logo.png" alt="Logo" >
   </a>
 
   <!--
