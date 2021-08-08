@@ -66,7 +66,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CREATE BY -->
 ## Create By
 
-[Davi Augusto Neves Leite](https://github.com/davimedio01)
+[Davi Neves](https://github.com/davimedio01)
 
 
 <!-- ACKNOWLEDGEMENTS -->
