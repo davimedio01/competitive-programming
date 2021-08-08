@@ -6,7 +6,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url] -->
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
@@ -22,9 +22,11 @@
     <img src="/Resources/Images/logo.png" alt="Logo" >
   </a>
 
+  <!--
   <h3 align="center">project_title</h3>
+  -->
 
-  <p align="center">project_description</p>
+  <p align="center">A repository for solved exercises of Competitive Programming</p>
 </p>
 
 
@@ -61,7 +63,6 @@ Text.
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
-
 <!-- CREATE BY -->
 ## Create By
 
@@ -69,10 +70,11 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 <!-- ACKNOWLEDGEMENTS -->
+<!--
 ## Acknowledgements
 
-* Nothing, but sadness
-
+* Text
+-->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
