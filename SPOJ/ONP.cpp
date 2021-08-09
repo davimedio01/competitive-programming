@@ -7,7 +7,7 @@ using namespace std;
 int VerificaVazia(vector<char> pilha){
     return (pilha.size() == NULL);
 }
-//Função Vefificar Sinais
+//Função Verificar Sinais
 int VerificaSinais(char info){
     return
     (info == '+' || info == '-' || info == '*' || info == '/' || info == '^');
