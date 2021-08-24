@@ -7,3 +7,7 @@
 
 # Local History for Visual Studio Code
 .history/
+
+# Input and Output Text Files
+input.txt
+output.txt
