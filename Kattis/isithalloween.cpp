@@ -18,12 +18,13 @@ int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
     
-    int eye, nose, mouth;
-    cin >> eye >> nose >> mouth;
+    string month, day;
+    cin >> month >> day;
 
-    int answer = eye * nose * mouth;
-    
-    cout << answer;
-    
+    if((month == "OCT" && day == "31") || (month == "DEC" && day == "25"))
+        cout << "yup";
+    else
+        cout << "nope";
+
     return 0;
 }
