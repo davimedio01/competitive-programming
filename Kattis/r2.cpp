@@ -1,12 +1,12 @@
 /*
 Author: Davi Augusto Neves Leite
-Date: //!CTRL + SHIFT + I
+Date: 10/04/2022
 
 Compile with args: -O2 -Wall -Wextra
 Execute with args: < input.txt > output.txt
 
-In terminal for Compile: g++ -O2 -Wall -Wextra code.cpp
-In terminal for Execute: code.cpp < input.txt > output.txt
+In terminal for Compile (code = name of file): g++ -O2 -Wall -Wextra code.cpp
+In terminal for Execute (code = name of file): code.cpp < input.txt > output.txt
 */
 
 //#pragma comment(linker, "/stack: 200000000")
@@ -64,7 +64,7 @@ typedef vector<string> vs;
 
 
 int main(){
-    fast_io;
+    //fast_io;
     //read_file;
     
     
