@@ -11,7 +11,7 @@ Compile with args: -O2 -Wall -Wextra
 Execute with args: < input.txt > output.txt
 
 In terminal for Compile (code = name of file): g++ -O2 -Wall -Wextra code.cpp
-In terminal for Execute (code = name of file): code.cpp < input.txt > output.txt
+In terminal for Execute: ./a.out < input.txt > output.txt
 */
 
 //#pragma comment(linker, "/stack: 200000000")
