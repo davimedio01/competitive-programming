@@ -1,8 +1,12 @@
 /*
 Author: Davi Augusto Neves Leite
-Date: 15/09/2020
+Date: //!CTRL + SHIFT + I
 
-Explicação
+Compile with args: -O2 -Wall -Wextra
+Execute with args: < input.txt > output.txt
+
+In terminal for Compile (code = name of file): g++ -O2 -Wall -Wextra code.cpp
+In terminal for Execute: ./a.out < input.txt > output.txt
 
 Fazer o total possível de ataque/posição menos a combinatória dos cavalos de se atacarem
 
@@ -11,7 +15,7 @@ Total possível: n²*(n² - 1)/2 (dois cavalos posicionados em qualquer lugar do
 A combinatória pode ser encontrada analisando um tabuleiro 2x3 ou 3x2, os quais
 formam o "ataque" dos cavalos (em forma de "L" -> 2x3 ou 3x2):
 
-- -     - - - 
+- -     - - -
 - -     - - -
 - -     (formas de "L")
 
@@ -32,32 +36,64 @@ ___________   -
     2
 */
 
-#include <bits/stdc++.h>
+//#pragma comment(linker, "/stack: 200000000")
+//#pragma GCC optimize("unroll-loops")
 
-#define MAX 10002
-typedef long long ll;
+#include <bits/stdc++.h>
 
 using namespace std;
 
+#define fast_io ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define read_file freopen("input.txt", "r", stdin);
+
+typedef long long ll;
+typedef pair<int, int> ii;
+typedef pair<ll, ll> pll;
+typedef tuple<int, int, int> iii;
+typedef tuple<ll, ll, ll> tlll;
+typedef vector<int> vi;
+typedef vector<ii> vii;
+typedef vector<iii> viii;
+typedef vector<ll> vl;
+typedef vector<pll> vpll;
+typedef vector<tlll> vtlll;
+typedef vector<string> vs;
+
+#define MAX 100005
+#define MOD 1000000007LL
+#define inf 1e9
+#define INF 1e16
+#define EPS 1e-9
+#define PI acos(-1)
+#define MEMS(x,y) memset (x, y, sizeof (x))
+#define MP make_pair
+#define PB push_back
+#define SORT(a) sort (a.begin(), a.end())
+#define REVERSE(a) reverse (a.begin(), a.end())
+#define for_inc(i,a,b) for (int i=(a); i<(b); i++)
+#define for_dec(i,a,b) for (int i=(a); i>=(b); i--)
+#define FOR_INC(i,a,b) for (ll i=(a); i<(b); i++)
+#define FOR_DEC(i,a,b) for (ll i=(a); i>=(b); i--)
+#define itrALL(c,itr) for(__typeof((c).begin()) itr=(c).begin(); itr!=(c).end(); itr++)
+#define out(a) cout<<a<<endl
+#define out_pair(a) cout<<a.first<<" "<<a.second<<endl
+#define DEBUG1 cout<<"Chegou aqui"<<endl
+#define DEBUG2(a,b) cout<<a<<": "<<b<<endl
+
+/* Direction Array */
+// int fx[]={1, -1, 0, 0};
+// int fy[]={0, 0, 1, -1};
+// int fx[]={0, 0, 1, -1, -1, 1, -1, 1};
+// int fy[]={-1, 1, 0, 0, 1, 1, -1, -1};
+
+/***************** END OF DEFAULT HEADER *****************/
+
+
+
 int main(){
-    ios::sync_with_stdio(0);
-    cin.tie(0);
-    /*freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);*/
-
-    ll n;
-    cin >> n;
-
-    ll k1, k2;
-    for(ll i = 1; i <= n; i++){
-        //Marca o total de lugares para colocar os cavalos
-        k1 = ((i * i) * ((i * i) - 1))/2;
-
-        //Combinação: 2(k - 1) * (k - 2) + 2(k - 1) * (k - 2)
-        k2 = 4 * (i - 1) * (i - 2);
-        
-        cout << k1 - k2 << endl;
-    }
-
+    //fast_io;
+    //read_file;
+    
+    
     return 0;
 }
