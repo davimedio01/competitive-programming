@@ -1,12 +1,15 @@
 /*
 Author: Davi Augusto Neves Leite
-Date: //!CTRL + SHIFT + I
+Date: 03/05/2022
 
 Compile with args: -O2 -Wall -Wextra
 Execute with args: < input.txt > output.txt
 
 In terminal for Compile (code = name of file): g++ -O2 -Wall -Wextra code.cpp
+~ If you want to generate the output file with the same name of your source code, just put (code = name of file): g++ -O2 -Wall -Wextra code.cpp -o code
+
 In terminal for Execute: ./a.out < input.txt > output.txt
+~ If you generate the output file with the same name of your source code, remove the ".out" in execution command above.
 */
 
 //#pragma comment(linker, "/stack: 200000000")
@@ -17,7 +20,7 @@ In terminal for Execute: ./a.out < input.txt > output.txt
 using namespace std;
 
 #define fast_io ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
-#define read_file freopen("input.txt", "r", stdin);
+#define read_file freopen("input.txt", "r", stdin); freopen("output.txt", "w", stdout);
 
 typedef long long ll;
 typedef pair<int, int> ii;
@@ -66,7 +69,14 @@ typedef vector<string> vs;
 int main(){
     //fast_io;
     //read_file;
-    
-    
+
+    int a;
+    cin >> a;
+
+    out(a);
+    DEBUG1;
+    DEBUG1;
+    DEBUG1;
+
     return 0;
 }

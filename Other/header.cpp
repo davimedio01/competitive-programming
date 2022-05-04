@@ -1,7 +1,10 @@
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Please, if you need the .json file for Visual Studio Code, see the "cpp.json" in root of this repository!
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/* 
+~ Please, if you need the .json file for Snippets in Visual Studio Code, see the "cpp.json" in "VSCode JSON" folder of this folder!
+~ And if you need the "tasks.json" for automatic compile and "launch.json" for automatic execution, see the same folder as "cpp.json"!
+*/
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
 Author(s): Put your name here (or of your team)
@@ -11,7 +14,10 @@ Compile with args: -O2 -Wall -Wextra
 Execute with args: < input.txt > output.txt
 
 In terminal for Compile (code = name of file): g++ -O2 -Wall -Wextra code.cpp
+~ If you want to generate the output file with the same name of your source code, just put (code = name of file): g++ -O2 -Wall -Wextra code.cpp -o code
+
 In terminal for Execute: ./a.out < input.txt > output.txt
+~ If you generate the output file with the same name of your source code, remove the ".out" in execution command above.
 */
 
 //#pragma comment(linker, "/stack: 200000000")

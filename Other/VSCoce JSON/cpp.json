@@ -8,14 +8,21 @@
             "Compile with args: -O2 -Wall -Wextra",
             "Execute with args: < input.txt > output.txt\n",
             "In terminal for Compile (code = name of file): g++ -O2 -Wall -Wextra code.cpp",
+            "~ If you want to generate the output file with the same name of your source code, just put (code = name of file): g++ -O2 -Wall -Wextra code.cpp -o code",
+            "",
             "In terminal for Execute: ./a.out < input.txt > output.txt",
+            "~ If you generate the output file with the same name of your source code, remove the \".out\" in execution command above.",
             "*/\n",
+            
             "//#pragma comment(linker, \"/stack: 200000000\")",
             "//#pragma GCC optimize(\"unroll-loops\")\n",
+            
             "#include <bits/stdc++.h>\n",
             "using namespace std;\n",
+            
             "#define fast_io ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);",
-            "#define read_file freopen(\"input.txt\", \"r\", stdin);\n",
+            "#define read_file freopen(\"input.txt\", \"r\", stdin); freopen(\"output.txt\", \"w\", stdout);\n",
+            
             "typedef long long ll;",
             "typedef pair<int, int> ii;",
             "typedef pair<ll, ll> pll;",
@@ -28,6 +35,7 @@
             "typedef vector<pll> vpll;",
             "typedef vector<tlll> vtlll;",
             "typedef vector<string> vs;\n",
+
             "#define MAX 100005",
             "#define MOD 1000000007LL",
             "#define inf 1e9",
@@ -48,6 +56,7 @@
             "#define out_pair(a) cout<<a.first<<\" \"<<a.second<<endl",
             "#define DEBUG1 cout<<\"Came here!\"<<endl",
             "#define DEBUG2(a,b) cout<<a<<\": \"<<b<<endl\n",
+
             "/* Direction Array */",
             "// int fx[]={1, -1, 0, 0};",
             "// int fy[]={0, 0, 1, -1};",
@@ -55,6 +64,7 @@
             "// int fy[]={-1, 1, 0, 0, 1, 1, -1, -1};\n",
             "/***************** END OF DEFAULT HEADER *****************/\n",
             "// Here, put all defines and functions for an exercise.\n",
+            
             "int main(){",
             "\t//fast_io;",
             "\t//read_file;",
